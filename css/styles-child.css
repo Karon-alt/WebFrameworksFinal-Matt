@@ -146,12 +146,24 @@ footer {
     padding-left: 14%;
 }
 
-@media only screen and (max-width: 918px) {
+@media only screen and (max-width: 768px) {
     .imgCarousel {
         margin-left: 10%;
     }
     /* about page----------*/
     article.matts-video {
         max-width: max-content;
+    }
+    header.masthead .masthead-heading {
+        font-size: 2rem;
+    }
+    #mainNav .navbar-brand img {
+        height: 7rem;
+    }
+    .card {
+        padding-left: 20%;
+    }
+    .page-section {
+        padding: 2em;
     }
 }

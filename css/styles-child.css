@@ -26,6 +26,16 @@ h2 {
     color: #149FC6;
 }
 
+.gold {
+    color: #D3982B;
+    padding-top: 1.5em;
+}
+
+.blue {
+    color: #149FC6;
+    padding-top: 1.5em;
+}
+
 h6 {
     text-align: center;
 }
@@ -160,10 +170,22 @@ footer {
     #mainNav .navbar-brand img {
         height: 7rem;
     }
-    .card {
-        padding-left: 20%;
-    }
     .page-section {
         padding: 2em;
     }
+    h6 {
+        font-size: 90%;
+    }
+    .logo-sm {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h6 {
+        font-size: 75%;
+    }
+}
+
+
 }

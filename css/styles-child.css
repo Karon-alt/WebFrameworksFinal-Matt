@@ -40,36 +40,18 @@ h6 {
     text-align: center;
 }
 
-.imgCarousel {
-    position: relative;
-    text-align: center;
-    top: 0;
-    left: 0;
-    padding-top: 5%;
-}
-
 
 /*-------------About Page--------------*/
 
 .video-container {
     position: relative;
     text-align: center;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
 }
 
 .video-container iframe,
 .video-container object,
 .video-container embed {
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-top: 5%;
+    margin: auto;
 }
 
 
@@ -109,10 +91,6 @@ h6 {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
-    img {
-        width: 100%;
-        height: auto;
-    }
 }
 
 .content1 {
@@ -123,7 +101,7 @@ h6 {
     text-align: center;
 }
 
-.suppoprt-me {
+.support-me {
     display: inline-block;
     position: fixed;
     bottom: 10px;
@@ -132,10 +110,6 @@ h6 {
     max-width: 250px;
     min-width: 200px;
     z-index: 9;
-    img {
-        width: 100%;
-        height: auto;
-    }
 }
 
 footer {
@@ -156,6 +130,200 @@ footer {
     padding-left: 14%;
 }
 
+
+/* -----------------------Services  ----------------------------------*/
+
+.pad {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.pad img {
+    width: 50%;
+}
+
+
+/* ---------------scroll animation---------------
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
+
+.graph {
+    padding: 2%;
+}
+
+.bg-img {
+    background-image: url("assets/img/services/insurance.png");
+}
+
+
+/* ---------------Reviews on Services/Client page -----*/
+
+.rating-box {
+    width: 130px;
+    height: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FBC02D;
+    color: #fff
+}
+
+.rating-label {
+    font-weight: bold
+}
+
+.rating-bar {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 5px
+}
+
+.bar-5 {
+    width: 70%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-4 {
+    width: 0%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-3 {
+    width: 0%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-2 {
+    width: 0%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-1 {
+    width: 0%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+td {
+    padding-bottom: 10px
+}
+
+.star-active {
+    color: #FBC02D;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.star-active:hover {
+    color: #F9A825;
+    cursor: pointer
+}
+
+.star-inactive {
+    color: #CFD8DC;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.blue-text {
+    color: #0091EA
+}
+
+p.content {
+    font-size: 18px;
+    padding: 5%;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin-right: 30px
+}
+
+.pic {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px
+}
+
+.vote {
+    cursor: pointer
+}
+
+
+/*--------general media queries----------*/
+
 @media only screen and (max-width: 768px) {
     .imgCarousel {
         margin-left: 10%;
@@ -171,7 +339,7 @@ footer {
         height: 7rem;
     }
     .page-section {
-        padding: 2em;
+        padding: 1em;
     }
     h6 {
         font-size: 90%;
@@ -179,13 +347,16 @@ footer {
     .logo-sm {
         width: 40%;
     }
+    .resp-img {
+        width: 60%;
+    }
+    .pad {
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 320px) {
     h6 {
         font-size: 75%;
     }
-}
-
-
 }
